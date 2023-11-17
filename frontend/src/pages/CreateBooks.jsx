@@ -22,7 +22,7 @@ const CreateBooks = () => {
       publishYear,
     };
     axios
-      .post("https://opbstore.vercel.appbooks", data)
+      .post("https://opbstore.vercel.app/books", data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book saved Successfully", { variant: "success" });
