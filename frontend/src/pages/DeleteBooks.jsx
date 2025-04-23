@@ -14,7 +14,7 @@ const DeleteBooks = () => {
   const handleDeleteBook = () => {
     setLoading(true);
     axios
-      .delete(`https://opbstore.vercel.app/books/${id}`)
+      .delete(`http://localhost:3001/books/${id}`)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Book Deleted successfully', { variant: 'success' });
